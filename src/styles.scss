@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+@import "~bootstrap/dist/css/bootstrap.css";
+@import './assets/dark.scss';
+@import './assets/light.scss';
+
+html, body { min-height: 100vh; }
+body { margin: 0; font-family:'Times New Roman', Times, serif, "Helvetica Neue", sans-serif;box-sizing: border-box }
+.light{@include light}
+.dark{@include dark;}
+
+
+.bg-body-tertiary{
+  background-color: inherit !important;
+  
+}
+
+.pointer{
+  cursor: pointer;
+}
+p{
+  font-size: 1.3rem;
+}

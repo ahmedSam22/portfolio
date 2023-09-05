@@ -1,0 +1,26 @@
+.custom-h2{
+    width: 100%;
+}
+
+.lang-name{
+    font-weight: 900;
+}
+
+.level{
+    margin-inline-start: 10px;
+    color: #777 !important;
+    font-weight: light;
+
+}
+
+a{
+    text-decoration: none;
+    width: max-content;
+    align-items: center;
+}
+
+.img-sec{
+    @media  (max-width : 768px) {
+        display: none;
+           }
+}
