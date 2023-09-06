@@ -18,6 +18,10 @@ export class NavigationComponent {
   turnLight(){
   return this.service.turnLight()
   }
+  currentTheme:any;
 
+  ngOnInit():void{
+    this.service.currentTheme.subscribe(e=>this.currentTheme = e)
+  }
 
 }

@@ -148,4 +148,40 @@ line-height: 1.5;
       border-radius: 15px;
   }
 
+  .switch-body{
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #4a4c50;
+    // background-color: #1f2533;
+    background-image: url('../assets/images/switch/sky.png');
+    position: relative;
+    background-size: contain;
+    border: 1px solid gray;
+  
+
+}
+
+
+.switch-sec{
+  // animation-name: justifyy;
+  // transition: justify-content 900ms ease-in-out;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-in-out;
+  // animation-fill-mode: forwards;
+  // transition: justify-content 900ms ease-in-out
+
+
+  justify-content: end;
+}
+
+
+@keyframes justifyy {
+  0% {transform: translateX(0%);}
+
+  100% {transform: translateX(100%);}
+}
+
+
+
     }

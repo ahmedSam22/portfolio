@@ -125,4 +125,27 @@
     border-radius: 15px;
 }
 
+
+.switch-body{
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  background-color: #b3c9fc;
+  // background-color: #1f2533;
+  background-image: url('../assets/images/switch/sky.png');
+  position: relative;
+  background-size: contain;
+  border: 1px solid gray;
+
+
+}
+
+
+
+@keyframes justifyy {
+  0% {transform: translateX(100%);}
+
+  100% {transform: translateX(0%);}
+}
+
 }
