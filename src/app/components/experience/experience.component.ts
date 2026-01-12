@@ -39,9 +39,7 @@ import { other_projects } from 'src/assets/other-project';
         duration : '10000ms'
       })
     ]),
-  
   ])
-
 ]
 })
 export class ExperienceComponent {
