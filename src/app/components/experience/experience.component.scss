@@ -1,13 +1,89 @@
-.project-card{
-    border-bottom: 1px solid rgb(175, 175, 175);
-    padding: 15px 10px;
+.modern-card {
+    background: rgba(128, 128, 128, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        border-color: rgba(128, 128, 128, 0.4);
+    }
 }
-a{
+
+.company-badge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #56ACE0;
+}
+
+.project-date {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.description-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.role-section {
+    background: rgba(86, 172, 224, 0.05);
+    border-left: 3px solid #56ACE0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    
+    strong {
+        color: #56ACE0;
+    }
+}
+
+.tech-badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(86, 172, 224, 0.1), rgba(109, 199, 255, 0.15));
+    border: 1px solid rgba(86, 172, 224, 0.2);
+    color: inherit;
+    transition: all 0.2s ease;
+    
+    &:hover {
+        background: rgba(86, 172, 224, 0.2);
+        transform: translateY(-2px);
+    }
+}
+
+a {
     border-bottom: none !important;
 }
 
-.disabled{
-    filter: brightness(.4) !important;
-    pointer-events: none;
+.link-icon {
+    transition: transform 0.2s ease, filter 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+        transition: transform 0.2s ease;
+    }
 
+    &:hover:not(.disabled) {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+}
+
+.disabled {
+    filter: grayscale(1) opacity(0.3) !important;
+    pointer-events: none;
+    cursor: not-allowed;
 }

@@ -1,79 +1,63 @@
 <div class="container h-100 flex-column d-flex justify-content-center align-items-center py-5">
-    <div class="row mt-2">
-        <div class="col-md-10">
+    <div class="row mt-2 align-items-center">
+        <div class="col-lg-8 col-md-12">
             <div [@slideInOut] class="">
                 <h2 class="custom-h2 custom-border text-start">ABOUT</h2>
-                <p>5+ years experienced Front-End Developer with hands-on experience in
+                <p class="bio-text">5+ years experienced Front-End Developer with hands-on experience in
                     identifying web-based user interactions along with designing & implementing
                     highly-responsive user interface components , writing application interface
                     code via javascript programming language, Angular and Many Other
                     Technologies, Adept at monitoring & maintaining frontend performance .</p>
-                <div class="row ">
-                    <div class="col-md-6 my-3">
-                        <h2 class="custom-h2 custom-border text-start">Languages</h2>
-                        <div class="d-flex flex-column">
-                            <div> <span class="lang-name">Arabic</span> <span class="level">Native</span></div>
-                            <div> <span class="lang-name">English</span> <span class="level">Intermediate</span></div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="modern-card">
+                            <h2 class="custom-h2 custom-border text-start">Languages</h2>
+                            <div class="d-flex flex-column">
+                                <div class="lang-item"> <span class="lang-name">Arabic</span> <span class="level">Native</span></div>
+                                <div class="lang-item"> <span class="lang-name">English</span> <span class="level">Intermediate</span></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 my-3">
-                        <h2 class="custom-h2 custom-border text-start">CONTACTS</h2>
-                        <div class="contact--side d-flex flex-column justify-content-start my-4 gap-2">
-                            <a class="contact--side__link" href="mailto:ahmsamirdev@outlook.com" target="blank"
-                                class=" text-start about-hover pointer d-flex justify-content-start">
-                                <img src="assets/images/mail.svg" class="me-3" width="30px" alt="" srcset="">
-                                <span>
-                                    ahmsamirdev@outlook.com
-                                </span>
-                            </a>
+                    <div class="col-md-6">
+                        <div class="modern-card">
+                            <h2 class="custom-h2 custom-border text-start">CONTACTS</h2>
+                            <div class="contact--side d-flex flex-column justify-content-start gap-3 mt-3">
+                                <a class="contact--side__link d-flex" href="mailto:ahmsamirdev@outlook.com" target="blank">
+                                    <img src="assets/images/mail.svg" class="me-3" width="24px" alt="Email">
+                                    <span>ahmsamirdev@outlook.com</span>
+                                </a>
 
+                                <a class="contact--side__link d-flex" href="https://github.com/ahmedSam22" target="blank">
+                                    <img src="assets/images/githubIcon.svg" class="me-3" width="24px" alt="GitHub">
+                                    <span>GitHub</span>
+                                </a>
 
-                            <a class="contact--side__link" href="https://github.com/ahmedSam22" target="blank"
-                                class=" text-start about-hover pointer d-flex justify-content-start">
-
-                                <img src="assets/images/githubIcon.svg" class="me-3" width="30px" alt=""
-                                    srcset="">
-                                GitHub
-                            </a>
-
-                            <a class="contact--side__link" href="https://www.linkedin.com/in/asamirdev" target="blank"
-                                class=" text-start about-hover pointer d-flex justify-content-start">
-                                <img src="assets/images/linkedinIcon.svg" class="me-3" width="30px" alt=""
-                                    srcset="">
-
-                                Linkedin
-                            </a>
-
+                                <a class="contact--side__link d-flex" href="https://www.linkedin.com/in/asamirdev" target="blank">
+                                    <img src="assets/images/linkedinIcon.svg" class="me-3" width="24px" alt="LinkedIn">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
 
-
-                <div class="d-flex justify-content-start my-4">
+                <div class="d-flex justify-content-start mt-5">
                     <a href="https://drive.google.com/file/d/14rV7pgyENwzmmfoMlfhyFX_gQBVP-K2e/view?usp=sharing"
-                        target="blank" class=" text-start about-hover pointer">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1" stroke="currentColor">
-                            <path stroke-linecap="round" width="5" height="5" stroke-linejoin="round" stroke-width="1"
-                                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+                        target="blank" class="resume-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
                         </svg>
-
-
-
-                        Resume
+                        Download Resume
                     </a>
                 </div>
-
-
             </div>
-
         </div>
-        <div class="col-md-2 img-sec" [@image]>
-            <div>
-                <img width="100%" class="rounded-circle" src="assets/images/img.jpeg" alt="" srcset="">
+        <div class="col-lg-4 col-md-12 img-sec d-flex justify-content-center mt-5 mt-lg-0" [@image]>
+            <div class="position-relative">
+                <img width="280px" class="rounded-circle shadow-lg" src="assets/images/img.jpeg" alt="Ahmed Samir">
             </div>
         </div>
     </div>

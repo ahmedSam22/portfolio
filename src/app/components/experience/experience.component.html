@@ -5,29 +5,29 @@
                 <h2 class="custom-h2 custom-border text-start">Works</h2>
                 <div class="d-flex gap-3 py-2 flex-wrap">
                     <div>
-                        <div class="row py-3">
-                            <div class="col-12" *ngFor="let project of allProjects" class="project-card">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <h4>{{project.name}}</h4>
-                                            <span>{{project.company}}</span>
-                                            <div class="my-2">
-                                                <span *ngFor="let tech of project.techs"
-                                                    class="tech me-2 ">{{tech}}</span>
-                                            </div>
+                        <div class="row py-4 g-4">
+                            <div class="col-lg-6 col-md-12" *ngFor="let project of allProjects">
+                                <div class="modern-card h-100 d-flex flex-column">
+                                    <div class="card-header border-0 bg-transparent p-0 mb-3 d-flex flex-column flex-md-row justify-content-between align-items-start">
+                                        <div>
+                                            <h4 class="mb-1 fw-bold">{{project.name}}</h4>
+                                            <span class="company-badge">{{project.company}}</span>
                                         </div>
-
+                                        <span class="project-date mt-2 mt-md-0">{{project.date}}</span>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <span>
-                                                {{project.date}}
-                                            </span>
-                                            <span class="d-flex">
-                                                <a [ngClass]="+project.git_repo.length > 5 ? '' : 'disabled'"
-                                                    [href]="project.git_repo" target="blank"
-                                                    class=" text-start about-hover pointer d-flex justify-content-start">
+                                    <div class="card-body p-0 flex-grow-1">
+                                        <p class="description-text mb-3" *ngIf="project.description">{{project.description}}</p>
+                                        <div class="role-section p-3 mb-3 rounded" *ngIf="project.role">
+                                            <strong>Role:</strong> <span class="role-text">{{project.role}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent p-0 mt-auto d-flex flex-column gap-3">
+                                        <div class="tech-stack d-flex flex-wrap gap-2">
+                                            <span *ngFor="let tech of project.techs" class="tech-badge">{{tech}}</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end gap-3 mt-2">
+                                            <a [ngClass]="+project.git_repo.length > 5 ? '' : 'disabled'"
+                                                [href]="project.git_repo" target="blank" class="link-icon">
 
                                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="me-3"
                                                         width="30px" height="30px" viewBox="0 0 64 64">
@@ -51,10 +51,9 @@
                                                         </path>
                                                     </svg>
                                                     <!-- <svg *ngIf="currentTheme === 'dark'" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"><path stroke-linecap="round" width="5" height="5" stroke-linejoin="round" stroke-width="1" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path></svg> -->
-                                                </a>
-                                                <a [ngClass]="+project.live_site.length > 5 ? '' : 'disabled'"
-                                                    [href]="project.live_site" target="blank"
-                                                    class=" text-start about-hover pointer d-flex justify-content-start">
+                                            </a>
+                                            <a [ngClass]="+project.live_site.length > 5 ? '' : 'disabled'"
+                                                [href]="project.live_site" target="blank" class="link-icon">
                                                     <svg height="30px" width="30px" version="1.1" id="Layer_1"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -186,12 +185,7 @@
                                                             </g>
                                                         </g>
                                                     </svg>
-                                                </a>
-
-
-                                            </span>
-
-
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -209,29 +203,29 @@
                 <h2 class="custom-h2 custom-border text-start">Freelance & Other Projects</h2>
                 <div class="d-flex gap-3 py-2 flex-wrap">
                     <div>
-                        <div class="row py-3">
-                            <div class="col-12" *ngFor="let project of otherProjects" class="project-card">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <h4>{{project.name}}</h4>
-                                            <span>{{project.company}}</span>
-                                            <div class="my-2">
-                                                <span *ngFor="let tech of project.techs"
-                                                    class="tech me-2 ">{{tech}}</span>
-                                            </div>
+                        <div class="row py-4 g-4">
+                            <div class="col-lg-6 col-md-12" *ngFor="let project of otherProjects">
+                                <div class="modern-card h-100 d-flex flex-column">
+                                    <div class="card-header border-0 bg-transparent p-0 mb-3 d-flex flex-column flex-md-row justify-content-between align-items-start">
+                                        <div>
+                                            <h4 class="mb-1 fw-bold">{{project.name}}</h4>
+                                            <span class="company-badge">{{project.company}}</span>
                                         </div>
-
+                                        <span class="project-date mt-2 mt-md-0">{{project.date}}</span>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-between h-100">
-                                            <span>
-                                                {{project.date}}
-                                            </span>
-                                            <span class="d-flex">
-                                                <a [ngClass]="+project.git_repo.length > 5 ? '' : 'disabled'"
-                                                    [href]="project.git_repo" target="blank"
-                                                    class=" text-start about-hover pointer d-flex justify-content-start">
+                                    <div class="card-body p-0 flex-grow-1">
+                                        <p class="description-text mb-3" *ngIf="project.description">{{project.description}}</p>
+                                        <div class="role-section p-3 mb-3 rounded" *ngIf="project.role">
+                                            <strong>Role:</strong> <span class="role-text">{{project.role}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent p-0 mt-auto d-flex flex-column gap-3">
+                                        <div class="tech-stack d-flex flex-wrap gap-2">
+                                            <span *ngFor="let tech of project.techs" class="tech-badge">{{tech}}</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end gap-3 mt-2">
+                                            <a [ngClass]="+project.git_repo.length > 5 ? '' : 'disabled'"
+                                                [href]="project.git_repo" target="blank" class="link-icon">
 
                                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="me-3"
                                                         width="30px" height="30px" viewBox="0 0 64 64">
@@ -255,10 +249,9 @@
                                                         </path>
                                                     </svg>
                                                     <!-- <svg *ngIf="currentTheme === 'dark'" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"><path stroke-linecap="round" width="5" height="5" stroke-linejoin="round" stroke-width="1" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path></svg> -->
-                                                </a>
-                                                <a [ngClass]="+project.live_site.length > 5 ? '' : 'disabled'"
-                                                    [href]="project.live_site" target="blank"
-                                                    class=" text-start about-hover pointer d-flex justify-content-start">
+                                            </a>
+                                            <a [ngClass]="+project.live_site.length > 5 ? '' : 'disabled'"
+                                                [href]="project.live_site" target="blank" class="link-icon">
                                                     <svg height="30px" width="30px" version="1.1" id="Layer_1"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -390,12 +383,7 @@
                                                             </g>
                                                         </g>
                                                     </svg>
-                                                </a>
-
-
-                                            </span>
-
-
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
