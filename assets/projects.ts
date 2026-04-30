@@ -61,5 +61,41 @@ export const projects = [
     "techs": ["Angular" , "SASS" , "Angular Material" , "Firebase"],
     "company": "POMAC",
     "live_site": "https://huzmh.sa/"
+  },
+  {
+    "id": 7,
+    "name": "Teacher Package",
+    "git_repo": "https://github.com/ahmedSam22/new-sha7n",
+    "date": "05/2022 - 11/2022",
+    "techs": ["Angular" , "SASS" , "Angular Material" , "Firebase"],
+    "company": "POMAC",
+    "live_site": "https://huzmh.sa/"
+  },
+  {
+    "id": 8,
+    "name": "LDM",
+    "git_repo": "-",
+    "date": "12/2023 - 12/2025",
+    "techs": ["Angular" , "Angular Material" , "KendoUi"],
+    "company": "National Technology",
+    "live_site": "https://ldm.alborglaboratories.com"
+  },
+  {
+    "id": 9,
+    "name": "Unified Animal Health System",
+    "git_repo": "-",
+    "date": "12/2024 - 12/2025",
+    "techs": ["Angular" , "Angular Material" , "KendoUi"],
+    "company": "National Technology",
+    "live_site": "-"
+  },
+  {
+    "id": 10,
+    "name": "Home Visits",
+    "git_repo": "-",
+    "date": "12/2024 - 12/2025",
+    "techs": ["Angular" , "Angular Material" , "KendoUi"],
+    "company": "National Technology",
+    "live_site": "-"
   }
 ]
