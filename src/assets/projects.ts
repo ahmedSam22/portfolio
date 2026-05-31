@@ -2,7 +2,6 @@ export const projects = [
   {
     id: 1,
     name: 'Haircut',
-    git_repo: 'https://github.com/POMAC-EGYPT/HaircutterWebsite',
     date: '07/2023 - 07/2023',
     techs: ['Angular', 'SASS', 'Angular Material', 'Rxjs'],
     description:
@@ -14,7 +13,6 @@ export const projects = [
   {
     id: 2,
     name: 'Ward - Dashboard',
-    git_repo: 'https://github.com/POMAC-EGYPT/wardAdmin',
     date: '05/2023 - 07/2023',
     techs: ['Angular', 'SASS', 'Bootstrap'],
     description: 'Ward is a comprehensive selling platform for flowers.',
@@ -25,7 +23,6 @@ export const projects = [
   {
     id: 3,
     name: 'Bazzar - Dashboard',
-    git_repo: 'https://github.com/ahmedSam22/bazar-admin',
     date: '02/2023 - 05/2023',
     techs: ['Angular', 'SASS', 'Bootstrap'],
     description: 'Bazzar is a comprehensive e-commerce platform.',
@@ -36,7 +33,6 @@ export const projects = [
   {
     id: 4,
     name: 'IPE - Dashboard',
-    git_repo: 'https://github.com/ahmedSam22/sha7n-admin',
     date: '10/2022 - 02/2023',
     techs: ['Angular', 'SASS', 'Bootstrap'],
     description: 'IPE is a comprehensive transportation platform.',
@@ -47,7 +43,6 @@ export const projects = [
   {
     id: 5,
     name: 'IPE',
-    git_repo: 'https://github.com/ahmedSam22/new-sha7n',
     date: '08/2022 - 10/2022',
     techs: ['Angular', 'SASS', 'Angular Material'],
     description: 'IPE is a comprehensive transportation platform.',
@@ -58,7 +53,6 @@ export const projects = [
   {
     id: 6,
     name: 'Teacher Package - Dashboard',
-    git_repo: 'https://github.com/POMAC-EGYPT/HuzmhAdmin',
     date: '07/2022 - 08/2022',
     techs: ['Angular', 'SASS', 'Bootstrap'],
     description: 'Interactive Platform between students and teachers',
@@ -69,7 +63,6 @@ export const projects = [
   {
     id: 7,
     name: 'Teacher Package',
-    git_repo: 'https://github.com/ahmedSam22/new-sha7n',
     date: '05/2022 - 11/2022',
     techs: ['Angular', 'SASS', 'Angular Material', 'Firebase'],
     description: 'Teacher Package is a comprehensive platform for teachers.',
@@ -80,7 +73,6 @@ export const projects = [
   {
     id: 8,
     name: 'LDM',
-    git_repo: '-',
     date: '12/2023 - 12/2025',
     techs: ['Angular', 'Angular Material', 'KendoUi'],
     description: 'LDM is a comprehensive laboratory management system.',
@@ -91,7 +83,6 @@ export const projects = [
   {
     id: 9,
     name: 'Unified Animal Health System',
-    git_repo: '-',
     date: '12/2024 - 12/2025',
     techs: ['Angular', 'Angular Material', 'KendoUi'],
     description:
@@ -103,7 +94,6 @@ export const projects = [
   {
     id: 10,
     name: 'Home Visits',
-    git_repo: '-',
     date: '12/2024 - 12/2025',
     techs: ['Angular', 'Angular Material', 'KendoUi'],
     description: 'Home Sampling Booking feature, allowing patients to schedule home visits for medical collection and lab deliver (LDM Expand).',
